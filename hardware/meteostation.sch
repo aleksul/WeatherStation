@@ -1,0 +1,393 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "Meteostation"
+Date "2021-02-17"
+Rev ""
+Comp "Technospark"
+Comment1 ""
+Comment2 "Aleksul"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328PB-AU U?
+U 1 1 602D1858
+P 5750 3950
+F 0 "U?" H 5300 5400 50  0000 C CNN
+F 1 "ATmega328PB-AU" H 6150 2500 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 5750 3950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 5750 3950 50  0001 C CNN
+	1    5750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6031D774
+P 5750 5450
+F 0 "#PWR?" H 5750 5200 50  0001 C CNN
+F 1 "GND" H 5755 5277 50  0000 C CNN
+F 2 "" H 5750 5450 50  0001 C CNN
+F 3 "" H 5750 5450 50  0001 C CNN
+	1    5750 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6031F5B2
+P 5000 2750
+F 0 "C?" V 4748 2750 50  0000 C CNN
+F 1 "100nF" V 4839 2750 50  0000 C CNN
+F 2 "" H 5038 2600 50  0001 C CNN
+F 3 "~" H 5000 2750 50  0001 C CNN
+	1    5000 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60324C7E
+P 4850 2750
+F 0 "#PWR?" H 4850 2500 50  0001 C CNN
+F 1 "GND" H 4855 2577 50  0000 C CNN
+F 2 "" H 4850 2750 50  0001 C CNN
+F 3 "" H 4850 2750 50  0001 C CNN
+	1    4850 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6032A8FA
+P 9300 6000
+F 0 "C?" H 9415 6046 50  0000 L CNN
+F 1 "100nF" H 9415 5955 50  0000 L CNN
+F 2 "" H 9338 5850 50  0001 C CNN
+F 3 "~" H 9300 6000 50  0001 C CNN
+	1    9300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6032C2F4
+P 9050 6150
+F 0 "#PWR?" H 9050 5900 50  0001 C CNN
+F 1 "GND" H 9055 5977 50  0000 C CNN
+F 2 "" H 9050 6150 50  0001 C CNN
+F 3 "" H 9050 6150 50  0001 C CNN
+	1    9050 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6032DE53
+P 9050 5850
+F 0 "#PWR?" H 9050 5700 50  0001 C CNN
+F 1 "+5V" H 9065 6023 50  0000 C CNN
+F 2 "" H 9050 5850 50  0001 C CNN
+F 3 "" H 9050 5850 50  0001 C CNN
+	1    9050 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60328012
+P 8800 6000
+F 0 "C?" H 8915 6046 50  0000 L CNN
+F 1 "100nF" H 8915 5955 50  0000 L CNN
+F 2 "" H 8838 5850 50  0001 C CNN
+F 3 "~" H 8800 6000 50  0001 C CNN
+	1    8800 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 5850 9050 5850
+Connection ~ 9050 5850
+Wire Wire Line
+	9050 5850 9300 5850
+Wire Wire Line
+	8800 6150 9050 6150
+Connection ~ 9050 6150
+Wire Wire Line
+	9050 6150 9300 6150
+Wire Notes Line
+	8650 5600 9700 5600
+Wire Notes Line
+	9700 5600 9700 6400
+Wire Notes Line
+	9700 6400 8650 6400
+Wire Notes Line
+	8650 6400 8650 5600
+Text Notes 8750 5600 0    50   ~ 0
+Capacitors for +5V \nand GND pins on MCU
+$Comp
+L Device:L L?
+U 1 1 6034F8C7
+P 5850 2300
+F 0 "L?" H 5903 2346 50  0000 L CNN
+F 1 "10uH" H 5903 2255 50  0000 L CNN
+F 2 "" H 5850 2300 50  0001 C CNN
+F 3 "~" H 5850 2300 50  0001 C CNN
+	1    5850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60350996
+P 5800 2050
+F 0 "#PWR?" H 5800 1900 50  0001 C CNN
+F 1 "+5V" H 5815 2223 50  0000 C CNN
+F 2 "" H 5800 2050 50  0001 C CNN
+F 3 "" H 5800 2050 50  0001 C CNN
+	1    5800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2150 5850 2050
+Wire Wire Line
+	5850 2050 5800 2050
+Wire Wire Line
+	5800 2050 5750 2050
+Wire Wire Line
+	5750 2050 5750 2450
+Connection ~ 5800 2050
+$Comp
+L Device:R R?
+U 1 1 6035224A
+P 7800 4250
+F 0 "R?" V 7593 4250 50  0000 C CNN
+F 1 "10k" V 7684 4250 50  0000 C CNN
+F 2 "" V 7730 4250 50  0001 C CNN
+F 3 "~" H 7800 4250 50  0001 C CNN
+	1    7800 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60355BB2
+P 8050 4250
+F 0 "#PWR?" H 8050 4100 50  0001 C CNN
+F 1 "+5V" H 8065 4423 50  0000 C CNN
+F 2 "" H 8050 4250 50  0001 C CNN
+F 3 "" H 8050 4250 50  0001 C CNN
+	1    8050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 6035A760
+P 7800 4650
+F 0 "SW?" H 7800 4935 50  0000 C CNN
+F 1 "SW_MEC_5G" H 7850 4850 50  0000 C CNN
+F 2 "" H 7800 4850 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 7800 4850 50  0001 C CNN
+	1    7800 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4250 7600 4250
+Wire Wire Line
+	7600 4650 7600 4250
+Connection ~ 7600 4250
+$Comp
+L Device:C C?
+U 1 1 60360E03
+P 7800 4950
+F 0 "C?" V 7548 4950 50  0000 C CNN
+F 1 "100nF" V 7639 4950 50  0000 C CNN
+F 2 "" H 7838 4800 50  0001 C CNN
+F 3 "~" H 7800 4950 50  0001 C CNN
+	1    7800 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 4250 7650 4250
+Wire Wire Line
+	7600 4650 7600 4950
+Wire Wire Line
+	7600 4950 7650 4950
+Connection ~ 7600 4650
+$Comp
+L power:GND #PWR?
+U 1 1 603644F2
+P 8050 4950
+F 0 "#PWR?" H 8050 4700 50  0001 C CNN
+F 1 "GND" H 8055 4777 50  0000 C CNN
+F 2 "" H 8050 4950 50  0001 C CNN
+F 3 "" H 8050 4950 50  0001 C CNN
+	1    8050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4950 8050 4650
+Wire Wire Line
+	8050 4650 8000 4650
+Wire Wire Line
+	7950 4950 8050 4950
+Connection ~ 8050 4950
+Wire Wire Line
+	7950 4250 8050 4250
+$Comp
+L Device:Crystal_GND24 Y?
+U 1 1 6036F481
+P 7200 3350
+F 0 "Y?" V 7154 3594 50  0000 L CNN
+F 1 "16MHz" V 7245 3594 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 7200 3350 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/SMD-Crystal-Resonators_Seiko-Epson-X1E000021061300_C255909.html" H 7200 3350 50  0001 C CNN
+	1    7200 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 3350 6750 3350
+Wire Wire Line
+	6750 3350 6750 3200
+Wire Wire Line
+	6750 3200 7200 3200
+Wire Wire Line
+	6350 3450 6750 3450
+Wire Wire Line
+	6750 3450 6750 3500
+Wire Wire Line
+	6750 3500 7200 3500
+$Comp
+L Device:C C?
+U 1 1 60377713
+P 7800 3500
+F 0 "C?" V 7650 3500 50  0000 C CNN
+F 1 "12pF" V 7750 3650 50  0000 C CNN
+F 2 "" H 7838 3350 50  0001 C CNN
+F 3 "~" H 7800 3500 50  0001 C CNN
+	1    7800 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60379ADF
+P 7800 3200
+F 0 "C?" V 7650 3200 50  0000 C CNN
+F 1 "12pF" V 7750 3350 50  0000 C CNN
+F 2 "" H 7838 3050 50  0001 C CNN
+F 3 "~" H 7800 3200 50  0001 C CNN
+	1    7800 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 3500 7650 3500
+Connection ~ 7200 3500
+Wire Wire Line
+	7200 3200 7650 3200
+Connection ~ 7200 3200
+$Comp
+L power:GND #PWR?
+U 1 1 6037F0F5
+P 8100 3650
+F 0 "#PWR?" H 8100 3400 50  0001 C CNN
+F 1 "GND" H 8105 3477 50  0000 C CNN
+F 2 "" H 8100 3650 50  0001 C CNN
+F 3 "" H 8100 3650 50  0001 C CNN
+	1    8100 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3350 7400 3650
+Wire Wire Line
+	7000 3350 7000 3650
+Wire Wire Line
+	7000 3650 7400 3650
+Connection ~ 7400 3650
+Wire Wire Line
+	7400 3650 8100 3650
+Wire Wire Line
+	7950 3500 8100 3500
+Wire Wire Line
+	8100 3500 8100 3650
+Connection ~ 8100 3650
+Wire Wire Line
+	7950 3200 8100 3200
+Wire Wire Line
+	8100 3200 8100 3500
+Connection ~ 8100 3500
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J?
+U 1 1 60390A7D
+P 10350 6050
+F 0 "J?" H 10400 6250 50  0000 C CNN
+F 1 "Conn_02x03" H 10350 5850 50  0000 C CNN
+F 2 "" H 10350 6050 50  0001 C CNN
+F 3 "~" H 10350 6050 50  0001 C CNN
+	1    10350 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60391EBC
+P 10650 5950
+F 0 "#PWR?" H 10650 5800 50  0001 C CNN
+F 1 "+5V" H 10665 6123 50  0000 C CNN
+F 2 "" H 10650 5950 50  0001 C CNN
+F 3 "" H 10650 5950 50  0001 C CNN
+	1    10650 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603933E2
+P 10650 6150
+F 0 "#PWR?" H 10650 5900 50  0001 C CNN
+F 1 "GND" H 10655 5977 50  0000 C CNN
+F 2 "" H 10650 6150 50  0001 C CNN
+F 3 "" H 10650 6150 50  0001 C CNN
+	1    10650 6150
+	1    0    0    -1  
+$EndComp
+Text Label 6500 3050 0    50   ~ 0
+MOSI
+Wire Wire Line
+	6350 3050 6500 3050
+Text Label 10800 6050 0    50   ~ 0
+MOSI
+Wire Wire Line
+	10800 6050 10650 6050
+Text Label 9950 5950 0    50   ~ 0
+MISO
+Wire Wire Line
+	10150 5950 9950 5950
+Text Label 9950 6050 0    50   ~ 0
+SCK
+Text Label 9950 6150 0    50   ~ 0
+RESET
+Wire Wire Line
+	9950 6150 10150 6150
+Wire Wire Line
+	9950 6050 10150 6050
+Text Label 7600 4000 0    50   ~ 0
+RESET
+Wire Wire Line
+	7600 4000 7600 4250
+Wire Notes Line
+	9900 5700 9900 6400
+Wire Notes Line
+	9900 6400 11000 6400
+Wire Notes Line
+	11000 6400 11000 5700
+Wire Notes Line
+	11000 5700 9900 5700
+Text Notes 10150 5650 0    50   ~ 0
+ISP Connector
+Text Label 6500 3150 0    50   ~ 0
+MISO
+Wire Wire Line
+	6350 3150 6500 3150
+Text Label 6500 3250 0    50   ~ 0
+SCK
+Wire Wire Line
+	6350 3250 6500 3250
+$Sheet
+S 8250 1850 650  500 
+U 60322A2E
+F0 "ESP8266" 50
+F1 "esp8266.sch" 50
+$EndSheet
+$EndSCHEMATC
