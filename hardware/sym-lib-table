@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name FLASH)(type Legacy)(uri C:/Users/Aleks/Downloads/W25Q16JVSSIQ.lib)(options "")(descr ""))
-  (lib (name meteostation-rescue)(type Legacy)(uri ${KIPRJMOD}/meteostation-rescue.lib)(options "")(descr ""))
+  (lib (name TXB0106PWR)(type Legacy)(uri C:/Projects/meteostation/hardware/TXB0106PWR.lib)(options "")(descr ""))
 )
