@@ -1,0 +1,534 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TSP62150:TPS62150RGTR U?
+U 1 1 6036600F
+P 2750 1550
+F 0 "U?" H 2750 2520 50  0000 C CNN
+F 1 "TPS62150RGTR" H 2750 2429 50  0000 C CNN
+F 2 "QFN50P300X300X100-17N" H 2750 1550 50  0001 L BNN
+F 3 "" H 2750 1550 50  0001 L BNN
+	1    2750 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603686DC
+P 3950 2350
+F 0 "#PWR?" H 3950 2100 50  0001 C CNN
+F 1 "GND" H 3955 2177 50  0000 C CNN
+F 2 "" H 3950 2350 50  0001 C CNN
+F 3 "" H 3950 2350 50  0001 C CNN
+	1    3950 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 2350 3950 2250
+Connection ~ 3950 2050
+Wire Wire Line
+	3950 2050 3950 1950
+Connection ~ 3950 2150
+Wire Wire Line
+	3950 2150 3950 2050
+Connection ~ 3950 2250
+Wire Wire Line
+	3950 2250 3950 2150
+$Comp
+L power:VCC #PWR?
+U 1 1 603694E6
+P 700 850
+F 0 "#PWR?" H 700 700 50  0001 C CNN
+F 1 "VCC" H 715 1023 50  0000 C CNN
+F 2 "" H 700 850 50  0001 C CNN
+F 3 "" H 700 850 50  0001 C CNN
+	1    700  850 
+	1    0    0    -1  
+$EndComp
+Text Notes 800  700  0    50   ~ 0
+3.3...17V
+$Comp
+L Device:C C?
+U 1 1 6036A7E2
+P 700 1000
+F 0 "C?" H 815 1046 50  0000 L CNN
+F 1 "10uF 25V" H 815 955 50  0000 L CNN
+F 2 "" H 738 850 50  0001 C CNN
+F 3 "~" H 700 1000 50  0001 C CNN
+F 4 "CL32B106KAJNNNE" H 700 1000 50  0001 C CNN "Mfr.Part"
+	1    700  1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 850  1200 850 
+Connection ~ 700  850 
+Wire Wire Line
+	1550 1350 1200 1350
+Wire Wire Line
+	1200 1350 1200 1050
+Connection ~ 1200 850 
+Wire Wire Line
+	1200 850  700  850 
+Wire Wire Line
+	1550 1450 1200 1450
+Wire Wire Line
+	1200 1450 1200 1350
+Connection ~ 1200 1350
+Wire Wire Line
+	1550 1050 1200 1050
+Connection ~ 1200 1050
+Wire Wire Line
+	1200 1050 1200 850 
+$Comp
+L Device:C C?
+U 1 1 6036C131
+P 1000 1550
+F 0 "C?" V 748 1550 50  0000 C CNN
+F 1 "3.3nF" V 839 1550 50  0000 C CNN
+F 2 "" H 1038 1400 50  0001 C CNN
+F 3 "~" H 1000 1550 50  0001 C CNN
+F 4 "CC0603KRX7R9BB332" V 1000 1550 50  0001 C CNN "Mfr.Part"
+	1    1000 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 1550 1150 1550
+Wire Wire Line
+	700  1150 700  1550
+Wire Wire Line
+	700  1550 850  1550
+$Comp
+L power:GND #PWR?
+U 1 1 6036CFAF
+P 700 1550
+F 0 "#PWR?" H 700 1300 50  0001 C CNN
+F 1 "GND" H 705 1377 50  0000 C CNN
+F 2 "" H 700 1550 50  0001 C CNN
+F 3 "" H 700 1550 50  0001 C CNN
+	1    700  1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 700  1550
+$Comp
+L power:GND #PWR?
+U 1 1 6036D835
+P 1300 1850
+F 0 "#PWR?" H 1300 1600 50  0001 C CNN
+F 1 "GND" H 1305 1677 50  0000 C CNN
+F 2 "" H 1300 1850 50  0001 C CNN
+F 3 "" H 1300 1850 50  0001 C CNN
+	1    1300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 950  1300 950 
+Wire Wire Line
+	1300 950  1300 1250
+Wire Wire Line
+	1550 1250 1300 1250
+Connection ~ 1300 1250
+Wire Wire Line
+	1300 1250 1300 1850
+$Comp
+L Device:C C?
+U 1 1 6036F401
+P 4300 2150
+F 0 "C?" H 4415 2196 50  0000 L CNN
+F 1 "100nF" H 4415 2105 50  0000 L CNN
+F 2 "" H 4338 2000 50  0001 C CNN
+F 3 "~" H 4300 2150 50  0001 C CNN
+	1    4300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6036F620
+P 4300 2000
+F 0 "#PWR?" H 4300 1850 50  0001 C CNN
+F 1 "VCC" H 4315 2173 50  0000 C CNN
+F 2 "" H 4300 2000 50  0001 C CNN
+F 3 "" H 4300 2000 50  0001 C CNN
+	1    4300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6036F7F6
+P 4300 2300
+F 0 "#PWR?" H 4300 2050 50  0001 C CNN
+F 1 "GND" H 4305 2127 50  0000 C CNN
+F 2 "" H 4300 2300 50  0001 C CNN
+F 3 "" H 4300 2300 50  0001 C CNN
+	1    4300 2300
+	1    0    0    -1  
+$EndComp
+Text Notes 4400 2000 0    50   ~ 0
+AVIN - AGND\ncapacitor
+Wire Notes Line
+	4100 1750 4100 2550
+Wire Notes Line
+	4100 2550 4900 2550
+Wire Notes Line
+	4900 2550 4900 1750
+Wire Notes Line
+	4900 1750 4100 1750
+$Comp
+L Device:L L?
+U 1 1 6037D3C8
+P 4250 1150
+F 0 "L?" V 4440 1150 50  0000 C CNN
+F 1 "2.2uH" V 4349 1150 50  0000 C CNN
+F 2 "" H 4250 1150 50  0001 C CNN
+F 3 "~" H 4250 1150 50  0001 C CNN
+	1    4250 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 1150 3950 1050
+Connection ~ 3950 1050
+Wire Wire Line
+	3950 1050 3950 950 
+Text Label 1550 1650 2    50   ~ 0
+VOS
+Text Label 4600 1150 0    50   ~ 0
+VOS
+Text Label 1550 1150 2    50   ~ 0
+FB
+Wire Wire Line
+	3950 1150 4100 1150
+Connection ~ 3950 1150
+$Comp
+L Device:R R?
+U 1 1 603806B9
+P 4250 850
+F 0 "R?" V 4043 850 50  0000 C CNN
+F 1 "100K" V 4134 850 50  0000 C CNN
+F 2 "" V 4180 850 50  0001 C CNN
+F 3 "~" H 4250 850 50  0001 C CNN
+	1    4250 850 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60381723
+P 5050 1300
+F 0 "R?" H 5120 1346 50  0000 L CNN
+F 1 "316K" H 5120 1255 50  0000 L CNN
+F 2 "" V 4980 1300 50  0001 C CNN
+F 3 "~" H 5050 1300 50  0001 C CNN
+	1    5050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60382B0A
+P 5050 1800
+F 0 "R?" H 5120 1846 50  0000 L CNN
+F 1 "100K" H 5120 1755 50  0000 L CNN
+F 2 "" V 4980 1800 50  0001 C CNN
+F 3 "~" H 5050 1800 50  0001 C CNN
+	1    5050 1800
+	1    0    0    -1  
+$EndComp
+Text Label 4850 1550 2    50   ~ 0
+FB
+Wire Wire Line
+	5050 1450 5050 1550
+Wire Wire Line
+	4850 1550 5050 1550
+Connection ~ 5050 1550
+Wire Wire Line
+	5050 1550 5050 1650
+$Comp
+L Device:C C?
+U 1 1 603841AE
+P 5500 1550
+F 0 "C?" H 5615 1596 50  0000 L CNN
+F 1 "22uF" H 5615 1505 50  0000 L CNN
+F 2 "" H 5538 1400 50  0001 C CNN
+F 3 "~" H 5500 1550 50  0001 C CNN
+F 4 "CL21A226MQQNNNE" H 5500 1550 50  0001 C CNN "Mfr.Part"
+	1    5500 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1150 5500 1150
+Wire Wire Line
+	5500 1150 5500 1400
+Connection ~ 5050 1150
+Wire Wire Line
+	5050 1950 5500 1950
+Wire Wire Line
+	5500 1950 5500 1700
+$Comp
+L power:GND #PWR?
+U 1 1 60385113
+P 5500 1950
+F 0 "#PWR?" H 5500 1700 50  0001 C CNN
+F 1 "GND" H 5505 1777 50  0000 C CNN
+F 2 "" H 5500 1950 50  0001 C CNN
+F 3 "" H 5500 1950 50  0001 C CNN
+	1    5500 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 1950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 60385860
+P 5500 1150
+F 0 "#PWR?" H 5500 1000 50  0001 C CNN
+F 1 "+3.3V" H 5515 1323 50  0000 C CNN
+F 2 "" H 5500 1150 50  0001 C CNN
+F 3 "" H 5500 1150 50  0001 C CNN
+	1    5500 1150
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 1150
+Wire Wire Line
+	4400 1150 4500 1150
+Wire Wire Line
+	3950 850  4100 850 
+Wire Wire Line
+	4400 850  4500 850 
+Wire Wire Line
+	4500 850  4500 1150
+Connection ~ 4500 1150
+Wire Wire Line
+	4500 1150 5050 1150
+$Comp
+L Interface_USB:CH340E U?
+U 1 1 603B0049
+P 5900 6600
+F 0 "U?" H 5650 7150 50  0000 C CNN
+F 1 "CH340E" H 6100 6000 50  0000 C CNN
+F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 5950 6050 50  0001 L CNN
+F 3 "https://www.mpja.com/download/35227cpdata.pdf" H 5550 7400 50  0001 C CNN
+	1    5900 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603B004F
+P 5900 7200
+F 0 "#PWR?" H 5900 6950 50  0001 C CNN
+F 1 "GND" H 5905 7027 50  0000 C CNN
+F 2 "" H 5900 7200 50  0001 C CNN
+F 3 "" H 5900 7200 50  0001 C CNN
+	1    5900 7200
+	1    0    0    -1  
+$EndComp
+Text Notes 5400 7200 0    50   ~ 0
+USB-UART
+$Comp
+L Type-C:105450-0101 J?
+U 1 1 603B0DEB
+P 1750 6700
+F 0 "J?" H 1750 7667 50  0000 C CNN
+F 1 "105450-0101" H 1750 7576 50  0000 C CNN
+F 2 "MOLEX_105450-0101" H 1750 6700 50  0001 L BNN
+F 3 "" H 1750 6700 50  0001 L BNN
+F 4 "USB Shielded I/O Receptacle; Type C; Right Angle; Surface Mount; Gold over Nickel" H 1750 6700 50  0001 L BNN "DESCRIPTION"
+F 5 "None" H 1750 6700 50  0001 L BNN "PACKAGE"
+F 6 "Molex" H 1750 6700 50  0001 L BNN "MF"
+F 7 "105450-0101" H 1750 6700 50  0001 L BNN "MP"
+F 8 "1.71 USD" H 1750 6700 50  0001 L BNN "PRICE"
+F 9 "Good" H 1750 6700 50  0001 L BNN "AVAILABILITY"
+	1    1750 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 603B7579
+P 2450 7500
+F 0 "#PWR?" H 2450 7250 50  0001 C CNN
+F 1 "GND" H 2455 7327 50  0000 C CNN
+F 2 "" H 2450 7500 50  0001 C CNN
+F 3 "" H 2450 7500 50  0001 C CNN
+	1    2450 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 7000 2450 7100
+Connection ~ 2450 7100
+Wire Wire Line
+	2450 7100 2450 7200
+Connection ~ 2450 7200
+Wire Wire Line
+	2450 7200 2450 7300
+Connection ~ 2450 7300
+Wire Wire Line
+	2450 7300 2450 7400
+Connection ~ 2450 7400
+Wire Wire Line
+	2450 7400 2450 7500
+$Comp
+L power:VCC #PWR?
+U 1 1 603B80DC
+P 2450 5900
+F 0 "#PWR?" H 2450 5750 50  0001 C CNN
+F 1 "VCC" H 2465 6073 50  0000 C CNN
+F 2 "" H 2450 5900 50  0001 C CNN
+F 3 "" H 2450 5900 50  0001 C CNN
+	1    2450 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5900 2450 6000
+Connection ~ 2450 6000
+Wire Wire Line
+	2450 6000 2450 6100
+Connection ~ 2450 6100
+Wire Wire Line
+	2450 6100 2450 6200
+Connection ~ 2450 6200
+Wire Wire Line
+	2450 6200 2450 6300
+Text Notes 1250 7600 0    50   ~ 0
+Type-C header
+$Comp
+L Jumper:Jumper_3_Open JP?
+U 1 1 603B9872
+P 2950 6250
+F 0 "JP?" V 2904 6337 50  0000 L CNN
+F 1 "Jumper" V 2995 6337 50  0000 L CNN
+F 2 "" H 2950 6250 50  0001 C CNN
+F 3 "~" H 2950 6250 50  0001 C CNN
+	1    2950 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP?
+U 1 1 603BC5B8
+P 3850 6250
+F 0 "JP?" V 3804 6337 50  0000 L CNN
+F 1 "Jumper" V 3895 6337 50  0000 L CNN
+F 2 "" H 3850 6250 50  0001 C CNN
+F 3 "~" H 3850 6250 50  0001 C CNN
+	1    3850 6250
+	0    1    1    0   
+$EndComp
+Text Label 2450 6700 0    50   ~ 0
+D+
+Text Label 2450 6500 0    50   ~ 0
+D+
+Text Label 2450 6600 0    50   ~ 0
+D-
+Text Label 2450 6800 0    50   ~ 0
+D-
+Text Label 2800 6250 0    50   ~ 0
+D+
+Text Label 3700 6250 0    50   ~ 0
+D-
+Text Label 2950 6000 0    50   ~ 0
+USB_UART_D+
+Text Label 3850 6000 0    50   ~ 0
+USB_UART_D-
+Text Label 3950 6500 0    50   ~ 0
+USB_PWR_D-
+Text Label 3050 6500 0    50   ~ 0
+USB_PWR_D-
+Wire Wire Line
+	3850 6500 3950 6500
+Wire Wire Line
+	2950 6500 3050 6500
+$Comp
+L Device:R R?
+U 1 1 603C2BE1
+P 3400 7100
+F 0 "R?" V 3193 7100 50  0000 C CNN
+F 1 "0R" V 3284 7100 50  0000 C CNN
+F 2 "" V 3330 7100 50  0001 C CNN
+F 3 "~" H 3400 7100 50  0001 C CNN
+	1    3400 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 603C3C5A
+P 3400 7500
+F 0 "R?" V 3193 7500 50  0000 C CNN
+F 1 "0R" V 3284 7500 50  0000 C CNN
+F 2 "" V 3330 7500 50  0001 C CNN
+F 3 "~" H 3400 7500 50  0001 C CNN
+	1    3400 7500
+	0    1    1    0   
+$EndComp
+Text Label 3550 7100 0    50   ~ 0
+USB_PWR_D-
+Text Label 3550 7500 0    50   ~ 0
+USB_PWR_D-
+Text Label 3250 7500 2    50   ~ 0
+D-
+Text Label 3250 7100 2    50   ~ 0
+D+
+Wire Notes Line
+	2750 6600 4500 6600
+Wire Notes Line
+	4500 6600 4500 5900
+Wire Notes Line
+	4500 5900 2750 5900
+Wire Notes Line
+	2750 5900 2750 6600
+Wire Notes Line
+	3100 6850 3100 7600
+Wire Notes Line
+	3100 7600 4100 7600
+Wire Notes Line
+	4100 7600 4100 6850
+Wire Notes Line
+	4100 6850 3100 6850
+Text Notes 3100 5850 0    50   ~ 0
+Use it during programming
+Text Notes 3150 7700 0    50   ~ 0
+Solder it after everything
+Text Notes 2700 6750 0    50   ~ 0
+do NOT use BOTH top and bottom schematics 
+Wire Notes Line
+	2650 7750 2650 5700
+Wire Notes Line
+	2650 5700 4650 5700
+Wire Notes Line
+	4650 5700 4650 7750
+Wire Notes Line
+	4650 7750 2650 7750
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 603D534D
+P 10200 5800
+F 0 "BT?" H 10318 5896 50  0000 L CNN
+F 1 "Battery_Cell" H 10318 5805 50  0000 L CNN
+F 2 "" V 10200 5860 50  0001 C CNN
+F 3 "~" V 10200 5860 50  0001 C CNN
+	1    10200 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Batery:BQ25890RTWR U?
+U 1 1 603D673F
+P 8100 3500
+F 0 "U?" H 8100 5570 50  0000 C CNN
+F 1 "BQ25890RTWR" H 8100 5479 50  0000 C CNN
+F 2 "QFN50P400X400X80-25N" H 8100 3500 50  0001 L BNN
+F 3 "" H 8100 3500 50  0001 L BNN
+	1    8100 3500
+	1    0    0    -1  
+$EndComp
+Text Label 5500 6600 2    50   ~ 0
+USB_UART_D-
+Text Label 5500 6500 2    50   ~ 0
+USB_UART_D+
+Text Notes 650  600  0    50   ~ 0
+???
+$EndSCHEMATC

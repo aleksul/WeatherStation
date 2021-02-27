@@ -1,4 +1,6 @@
 (sym_lib_table
   (lib (name TXB0106PWR)(type Legacy)(uri C:/Projects/meteostation/hardware/TXB0106PWR.lib)(options "")(descr ""))
   (lib (name TSP62150)(type Legacy)(uri C:/Projects/meteostation/hardware/TPS62150RGTR.lib)(options "")(descr ""))
+  (lib (name Type-C)(type Legacy)(uri C:/Projects/meteostation/hardware/105450-0101.lib)(options "")(descr ""))
+  (lib (name Batery)(type Legacy)(uri C:/Projects/meteostation/hardware/BQ25890RTWR.lib)(options "")(descr ""))
 )

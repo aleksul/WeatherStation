@@ -429,9 +429,9 @@ L Device:Q_NMOS_GDS Q?
 U 1 1 60374F0D
 P 2050 6750
 F 0 "Q?" H 2255 6796 50  0000 L CNN
-F 1 "IRFL024ZTRPBF" H 2255 6705 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223" H 2250 6850 50  0001 C CNN
-F 3 "https://lcsc.com/product-detail/MOSFET_Infineon-Technologies-IRFL024ZTRPBF_C80625.html" H 2050 6750 50  0001 C CNN
+F 1 "SN7002NH6327" H 2255 6705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2250 6850 50  0001 C CNN
+F 3 "https://lcsc.com/product-detail/MOSFET_Infineon-Technologies-SN7002NH6327_C151514.html" H 2050 6750 50  0001 C CNN
 	1    2050 6750
 	1    0    0    -1  
 $EndComp
@@ -464,9 +464,9 @@ Wire Wire Line
 Connection ~ 2150 6400
 Wire Wire Line
 	2150 6400 2050 6400
-Text HLabel 9350 2050 2    50   Output ~ 0
+Text HLabel 6300 3150 2    50   Output ~ 0
 TX
-Text HLabel 9350 1950 2    50   Input ~ 0
+Text HLabel 6300 3050 2    50   Input ~ 0
 RX
 $Comp
 L Device:R R?
@@ -667,13 +667,13 @@ Wire Wire Line
 	5650 3250 7450 3250
 Wire Wire Line
 	6800 3850 6700 3850
-Text HLabel 7950 1950 0    50   Output ~ 0
+Text HLabel 6300 2750 2    50   Output ~ 0
 SPI_MISO
-Text HLabel 7950 1850 0    50   Input ~ 0
+Text HLabel 6300 2650 2    50   Input ~ 0
 SPI_CLK
-Text HLabel 9350 1850 2    50   Input ~ 0
+Text HLabel 6300 2550 2    50   Input ~ 0
 SPI_CS
-Text HLabel 7950 2050 0    50   Input ~ 0
+Text HLabel 6300 3350 2    50   Input ~ 0
 SPI_MOSI
 Wire Wire Line
 	5650 3450 6800 3450
@@ -860,135 +860,4 @@ Wire Wire Line
 	5700 3750 5650 3750
 Wire Wire Line
 	5650 3550 5700 3550
-$Comp
-L TXB0106PWR:TXB0106PWR U?
-U 1 1 6043CD93
-P 8650 1650
-F 0 "U?" H 8650 2620 50  0000 C CNN
-F 1 "TXB0106PWR" H 8650 2529 50  0000 C CNN
-F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 8650 1650 50  0001 L BNN
-F 3 "" H 8650 1650 50  0001 L BNN
-	1    8650 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0135
-U 1 1 6043FF0E
-P 10350 950
-F 0 "#PWR0135" H 10350 800 50  0001 C CNN
-F 1 "+3.3V" H 10365 1123 50  0000 C CNN
-F 2 "" H 10350 950 50  0001 C CNN
-F 3 "" H 10350 950 50  0001 C CNN
-	1    10350 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0136
-U 1 1 60440060
-P 9900 1050
-F 0 "#PWR0136" H 9900 900 50  0001 C CNN
-F 1 "+5V" H 9915 1223 50  0000 C CNN
-F 2 "" H 9900 1050 50  0001 C CNN
-F 3 "" H 9900 1050 50  0001 C CNN
-	1    9900 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0137
-U 1 1 60442E53
-P 9350 2250
-F 0 "#PWR0137" H 9350 2000 50  0001 C CNN
-F 1 "GND" H 9355 2077 50  0000 C CNN
-F 2 "" H 9350 2250 50  0001 C CNN
-F 3 "" H 9350 2250 50  0001 C CNN
-	1    9350 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0138
-U 1 1 604436ED
-P 7950 1250
-F 0 "#PWR0138" H 7950 1100 50  0001 C CNN
-F 1 "+3.3V" H 7965 1423 50  0000 C CNN
-F 2 "" H 7950 1250 50  0001 C CNN
-F 3 "" H 7950 1250 50  0001 C CNN
-	1    7950 1250
-	1    0    0    -1  
-$EndComp
-Text Label 7950 1450 2    50   ~ 0
-CLK
-Text Label 7950 1550 2    50   ~ 0
-MISO
-Text Label 7950 1650 2    50   ~ 0
-MOSI
-Text Label 9350 1450 0    50   ~ 0
-CS
-Text Label 9350 1550 0    50   ~ 0
-RXD
-Text Label 9350 1650 0    50   ~ 0
-TXD
-Text Label 6300 3150 0    50   ~ 0
-TXD
-Text Label 6300 3050 0    50   ~ 0
-RXD
-Text Label 6300 3350 0    50   ~ 0
-MOSI
-Text Label 6300 2750 0    50   ~ 0
-MISO
-Text Label 6300 2650 0    50   ~ 0
-CLK
-Text Label 6300 2550 0    50   ~ 0
-CS
-$Comp
-L Device:C C?
-U 1 1 6046579D
-P 9900 1200
-F 0 "C?" H 10015 1246 50  0000 L CNN
-F 1 "100nF" H 10015 1155 50  0000 L CNN
-F 2 "" H 9938 1050 50  0001 C CNN
-F 3 "~" H 9900 1200 50  0001 C CNN
-	1    9900 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60472470
-P 10350 1100
-F 0 "C?" H 10465 1146 50  0000 L CNN
-F 1 "100nF" H 10465 1055 50  0000 L CNN
-F 2 "" H 10388 950 50  0001 C CNN
-F 3 "~" H 10350 1100 50  0001 C CNN
-	1    10350 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9350 950  10350 950 
-Connection ~ 10350 950 
-Wire Wire Line
-	9350 1050 9900 1050
-Connection ~ 9900 1050
-$Comp
-L power:GND #PWR0139
-U 1 1 6047798E
-P 9900 1350
-F 0 "#PWR0139" H 9900 1100 50  0001 C CNN
-F 1 "GND" H 9905 1177 50  0000 C CNN
-F 2 "" H 9900 1350 50  0001 C CNN
-F 3 "" H 9900 1350 50  0001 C CNN
-	1    9900 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0140
-U 1 1 604787D4
-P 10350 1250
-F 0 "#PWR0140" H 10350 1000 50  0001 C CNN
-F 1 "GND" H 10355 1077 50  0000 C CNN
-F 2 "" H 10350 1250 50  0001 C CNN
-F 3 "" H 10350 1250 50  0001 C CNN
-	1    10350 1250
-	1    0    0    -1  
-$EndComp
-Text Notes 8300 2550 0    50   ~ 0
-Logical Level Shifter
 $EndSCHEMATC
