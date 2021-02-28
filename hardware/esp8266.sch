@@ -668,13 +668,13 @@ Wire Wire Line
 Wire Wire Line
 	6800 3850 6700 3850
 Text HLabel 6300 2750 2    50   Output ~ 0
-SPI_MISO
+MISO
 Text HLabel 6300 2650 2    50   Input ~ 0
-SPI_CLK
+CLK
 Text HLabel 6300 2550 2    50   Input ~ 0
-SPI_CS
+CS
 Text HLabel 6300 3350 2    50   Input ~ 0
-SPI_MOSI
+MOSI
 Wire Wire Line
 	5650 3450 6800 3450
 $Comp
