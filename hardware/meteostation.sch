@@ -264,4 +264,15 @@ $EndComp
 Connection ~ 2250 1050
 Wire Wire Line
 	2250 1050 2500 1050
+$Comp
+L MCU_ST_STM32L4:STM32L432KBUx U?
+U 1 1 604F928D
+P 5800 4150
+F 0 "U?" H 5800 5231 50  0000 C CNN
+F 1 "STM32L432KBUx" H 5800 5140 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm" H 5400 3250 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00257205.pdf" H 5800 4150 50  0001 C CNN
+	1    5800 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

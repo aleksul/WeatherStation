@@ -285,30 +285,6 @@ Connection ~ 4500 1150
 Wire Wire Line
 	4500 1150 5050 1150
 $Comp
-L Interface_USB:CH340E U?
-U 1 1 603B0049
-P 6450 5450
-F 0 "U?" H 6200 6000 50  0000 C CNN
-F 1 "CH340E" H 6650 4850 50  0000 C CNN
-F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 6500 4900 50  0001 L CNN
-F 3 "https://www.mpja.com/download/35227cpdata.pdf" H 6100 6250 50  0001 C CNN
-	1    6450 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 603B004F
-P 6450 6050
-F 0 "#PWR?" H 6450 5800 50  0001 C CNN
-F 1 "GND" H 6455 5877 50  0000 C CNN
-F 2 "" H 6450 6050 50  0001 C CNN
-F 3 "" H 6450 6050 50  0001 C CNN
-	1    6450 6050
-	1    0    0    -1  
-$EndComp
-Text Notes 5950 6050 0    50   ~ 0
-USB-UART
-$Comp
 L Type-C:105450-0101 J?
 U 1 1 603B0DEB
 P 1750 6600
@@ -459,10 +435,6 @@ Wire Notes Line
 	-2700 5850 -2700 3800
 Wire Notes Line
 	-700 5850 -2700 5850
-Text Label 6050 5450 2    50   ~ 0
-USB_UART_D-
-Text Label 6050 5350 2    50   ~ 0
-USB_UART_D+
 NoConn ~ 1050 7100
 NoConn ~ 1050 7000
 NoConn ~ 1050 6900
@@ -552,62 +524,8 @@ Wire Notes Line
 	-700 5850 -700 3800
 Wire Notes Line
 	-700 3800 -2700 3800
-$Comp
-L power:+3.3V #PWR?
-U 1 1 6052E7D8
-P 6350 4850
-F 0 "#PWR?" H 6350 4700 50  0001 C CNN
-F 1 "+3.3V" H 6365 5023 50  0000 C CNN
-F 2 "" H 6350 4850 50  0001 C CNN
-F 3 "" H 6350 4850 50  0001 C CNN
-	1    6350 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6450 4850 6350 4850
-Connection ~ 6350 4850
-Text HLabel 6850 5050 2    50   Output ~ 0
-CH340_TX
-Text HLabel 6850 5150 2    50   Input ~ 0
-CH340_RX
-NoConn ~ 6850 5850
-NoConn ~ 6850 5350
-NoConn ~ 6050 5550
 Text Label 4300 2000 0    50   ~ 0
 DC-DC_PWR
-$Comp
-L Device:C C?
-U 1 1 6053E82B
-P 7300 5650
-F 0 "C?" H 7415 5696 50  0000 L CNN
-F 1 "100nF" H 7415 5605 50  0000 L CNN
-F 2 "" H 7338 5500 50  0001 C CNN
-F 3 "~" H 7300 5650 50  0001 C CNN
-	1    7300 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 605408B8
-P 7300 5500
-F 0 "#PWR?" H 7300 5350 50  0001 C CNN
-F 1 "+3.3V" H 7315 5673 50  0000 C CNN
-F 2 "" H 7300 5500 50  0001 C CNN
-F 3 "" H 7300 5500 50  0001 C CNN
-	1    7300 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6054128D
-P 7300 5800
-F 0 "#PWR?" H 7300 5550 50  0001 C CNN
-F 1 "GND" H 7305 5627 50  0000 C CNN
-F 2 "" H 7300 5800 50  0001 C CNN
-F 3 "" H 7300 5800 50  0001 C CNN
-	1    7300 5800
-	1    0    0    -1  
-$EndComp
 Text Notes -3950 4050 0    50   ~ 0
 without\nbattery
 Text Notes -3950 4450 0    50   ~ 0
