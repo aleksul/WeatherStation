@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name TSP62150)(type Legacy)(uri C:/Projects/meteostation/hardware/libs/TPS62150RGTR.lib)(options "")(descr ""))
   (lib (name Type-C)(type Legacy)(uri C:/Projects/meteostation/hardware/libs/105450-0101.lib)(options "")(descr ""))
+  (lib (name MAX77751)(type Legacy)(uri C:/Projects/meteostation/hardware/libs/MAX77751FEFG.lib)(options "")(descr ""))
 )

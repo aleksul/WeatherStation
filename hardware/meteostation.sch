@@ -224,19 +224,6 @@ F6 "CLK" I R 10500 1400 50
 F7 "CS" I R 10500 1500 50 
 F8 "MOSI" I R 10500 1200 50 
 $EndSheet
-$Sheet
-S 1750 2250 1150 700 
-U 603656E0
-F0 "Power and USB" 50
-F1 "power_and_usb.sch" 50
-F2 "Q_DISABLE" I R 2900 2450 50 
-F3 "BQ25890_INT" I R 2900 2850 50 
-F4 "Q_BOOST" I R 2900 2350 50 
-F5 "BQ25890_SCL" B R 2900 2750 50 
-F6 "BQ25890_SDA" B R 2900 2650 50 
-F7 "CH340_TX" O L 1750 2550 50 
-F8 "CH340_RX" I L 1750 2650 50 
-$EndSheet
 $Comp
 L power:+3.3V #PWR?
 U 1 1 603A43C9
@@ -275,4 +262,10 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    5800 4150
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 1750 2250 1150 700 
+U 603656E0
+F0 "Power and USB" 50
+F1 "power_and_usb.sch" 50
+$EndSheet
 $EndSCHEMATC

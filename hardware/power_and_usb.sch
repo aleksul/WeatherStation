@@ -333,28 +333,6 @@ Wire Wire Line
 	2450 6100 2450 6200
 Text Notes 1250 7500 0    50   ~ 0
 Type-C header
-$Comp
-L Jumper:Jumper_3_Open JP?
-U 1 1 603B9872
-P -2400 4350
-F 0 "JP?" V -2446 4437 50  0000 L CNN
-F 1 "Jumper" V -2355 4437 50  0000 L CNN
-F 2 "" H -2400 4350 50  0001 C CNN
-F 3 "~" H -2400 4350 50  0001 C CNN
-	1    -2400 4350
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:Jumper_3_Open JP?
-U 1 1 603BC5B8
-P -1500 4350
-F 0 "JP?" V -1546 4437 50  0000 L CNN
-F 1 "Jumper" V -1455 4437 50  0000 L CNN
-F 2 "" H -1500 4350 50  0001 C CNN
-F 3 "~" H -1500 4350 50  0001 C CNN
-	1    -1500 4350
-	0    1    1    0   
-$EndComp
 Text Label 2450 6600 0    50   ~ 0
 D+
 Text Label 2450 6400 0    50   ~ 0
@@ -363,78 +341,6 @@ Text Label 2450 6500 0    50   ~ 0
 D-
 Text Label 2450 6700 0    50   ~ 0
 D-
-Text Label -2550 4350 0    50   ~ 0
-D+
-Text Label -1650 4350 0    50   ~ 0
-D-
-Text Label -2400 4100 0    50   ~ 0
-USB_UART_D+
-Text Label -1500 4100 0    50   ~ 0
-USB_UART_D-
-Text Label -1400 4600 0    50   ~ 0
-USB_PWR_D-
-Text Label -2300 4600 0    50   ~ 0
-USB_PWR_D+
-Wire Wire Line
-	-1500 4600 -1400 4600
-Wire Wire Line
-	-2400 4600 -2300 4600
-$Comp
-L Device:R R?
-U 1 1 603C2BE1
-P -1950 5200
-F 0 "R?" V -2157 5200 50  0000 C CNN
-F 1 "0R" V -2066 5200 50  0000 C CNN
-F 2 "" V -2020 5200 50  0001 C CNN
-F 3 "~" H -1950 5200 50  0001 C CNN
-	1    -1950 5200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 603C3C5A
-P -1950 5600
-F 0 "R?" V -2157 5600 50  0000 C CNN
-F 1 "0R" V -2066 5600 50  0000 C CNN
-F 2 "" V -2020 5600 50  0001 C CNN
-F 3 "~" H -1950 5600 50  0001 C CNN
-	1    -1950 5600
-	0    1    1    0   
-$EndComp
-Text Label -1800 5200 0    50   ~ 0
-USB_PWR_D+
-Text Label -1800 5600 0    50   ~ 0
-USB_PWR_D-
-Text Label -2100 5600 2    50   ~ 0
-D-
-Text Label -2100 5200 2    50   ~ 0
-D+
-Wire Notes Line
-	-2600 4700 -850 4700
-Wire Notes Line
-	-850 4700 -850 4000
-Wire Notes Line
-	-850 4000 -2600 4000
-Wire Notes Line
-	-2600 4000 -2600 4700
-Wire Notes Line
-	-2250 4950 -2250 5700
-Wire Notes Line
-	-2250 5700 -1250 5700
-Wire Notes Line
-	-1250 5700 -1250 4950
-Wire Notes Line
-	-1250 4950 -2250 4950
-Text Notes -2250 3950 0    50   ~ 0
-Use it during programming
-Text Notes -2550 5800 0    50   ~ 0
-Solder it after programming and debugging
-Text Notes -2650 4850 0    50   ~ 0
-do NOT use BOTH top and bottom schematics 
-Wire Notes Line
-	-2700 5850 -2700 3800
-Wire Notes Line
-	-700 5850 -2700 5850
 NoConn ~ 1050 7100
 NoConn ~ 1050 7000
 NoConn ~ 1050 6900
@@ -458,102 +364,8 @@ F 3 "" H 2450 5800 50  0001 C CNN
 $EndComp
 Text Label 700  850  0    50   ~ 0
 DC-DC_PWR
-$Comp
-L Device:R R?
-U 1 1 6045FB2F
-P -4100 4150
-F 0 "R?" V -4307 4150 50  0000 C CNN
-F 1 "0R" V -4216 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V -4170 4150 50  0001 C CNN
-F 3 "~" H -4100 4150 50  0001 C CNN
-	1    -4100 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 604601EF
-P -4100 4550
-F 0 "R?" V -4307 4550 50  0000 C CNN
-F 1 "0R" V -4216 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V -4170 4550 50  0001 C CNN
-F 3 "~" H -4100 4550 50  0001 C CNN
-	1    -4100 4550
-	0    1    1    0   
-$EndComp
-Text Label -3950 4150 0    50   ~ 0
-DC-DC_PWR
-Text Label -3950 4550 0    50   ~ 0
-DC-DC_PWR
-$Comp
-L power:VBUS #PWR?
-U 1 1 60465C61
-P -4400 4150
-F 0 "#PWR?" H -4400 4000 50  0001 C CNN
-F 1 "VBUS" H -4385 4323 50  0000 C CNN
-F 2 "" H -4400 4150 50  0001 C CNN
-F 3 "" H -4400 4150 50  0001 C CNN
-	1    -4400 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 60466B91
-P -4400 4550
-F 0 "#PWR?" H -4400 4400 50  0001 C CNN
-F 1 "VCC" H -4385 4723 50  0000 C CNN
-F 2 "" H -4400 4550 50  0001 C CNN
-F 3 "" H -4400 4550 50  0001 C CNN
-	1    -4400 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-4400 4550 -4250 4550
-Wire Wire Line
-	-4400 4150 -4250 4150
-Wire Notes Line
-	-4550 4650 -3450 4650
-Wire Notes Line
-	-3450 4650 -3450 3850
-Wire Notes Line
-	-3450 3850 -4550 3850
-Wire Notes Line
-	-4550 3850 -4550 4650
-Text Notes -4550 3800 0    50   ~ 0
-With/Without battery selector
-Wire Notes Line
-	-700 5850 -700 3800
-Wire Notes Line
-	-700 3800 -2700 3800
 Text Label 4300 2000 0    50   ~ 0
 DC-DC_PWR
-Text Notes -3950 4050 0    50   ~ 0
-without\nbattery
-Text Notes -3950 4450 0    50   ~ 0
-with\nbattery
-$Comp
-L power:VBUS #PWR?
-U 1 1 603EA1A9
-P 9900 5450
-F 0 "#PWR?" H 9900 5300 50  0001 C CNN
-F 1 "VBUS" H 9915 5623 50  0000 C CNN
-F 2 "" H 9900 5450 50  0001 C CNN
-F 3 "" H 9900 5450 50  0001 C CNN
-	1    9900 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 5450 9800 5450
-$Comp
-L Interface_USB:FUSB302BMPX U?
-U 1 1 603EFB15
-P 9300 5550
-F 0 "U?" H 9300 5061 50  0000 C CNN
-F 1 "FUSB302BMPX" H 9300 4970 50  0000 C CNN
-F 2 "Package_DFN_QFN:WQFN-14-1EP_2.5x2.5mm_P0.5mm_EP1.45x1.45mm" H 9300 5050 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/FUSB302B-D.PDF" H 9400 5150 50  0001 C CNN
-	1    9300 5550
-	1    0    0    -1  
-$EndComp
 Text Label 1050 6400 2    50   ~ 0
 CC2
 Text Label 1050 6300 2    50   ~ 0
