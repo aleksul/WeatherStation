@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "Meteostation"
 Date "2021-02-17"
 Rev ""
@@ -225,10 +225,10 @@ F7 "CS" I R 10500 1500 50
 F8 "MOSI" I R 10500 1200 50 
 $EndSheet
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0101
 U 1 1 603A43C9
 P 9350 4700
-F 0 "#PWR?" H 9350 4550 50  0001 C CNN
+F 0 "#PWR0101" H 9350 4550 50  0001 C CNN
 F 1 "+3.3V" H 9365 4873 50  0000 C CNN
 F 2 "" H 9350 4700 50  0001 C CNN
 F 3 "" H 9350 4700 50  0001 C CNN
@@ -238,10 +238,10 @@ $EndComp
 Wire Wire Line
 	2000 1050 2250 1050
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0102
 U 1 1 603A52DC
 P 2250 1050
-F 0 "#PWR?" H 2250 900 50  0001 C CNN
+F 0 "#PWR0102" H 2250 900 50  0001 C CNN
 F 1 "+3.3V" H 2265 1223 50  0000 C CNN
 F 2 "" H 2250 1050 50  0001 C CNN
 F 3 "" H 2250 1050 50  0001 C CNN
@@ -263,9 +263,30 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 1750 2250 1150 700 
+S 1750 2250 1450 850 
 U 603656E0
 F0 "Power and USB" 50
 F1 "power_and_usb.sch" 50
+F2 "BQ25895_INT" I L 1750 2600 50 
+F3 "BQ25895_SCL" B L 1750 2500 50 
+F4 "BQ25895_SDA" B L 1750 2400 50 
+F5 "ChargeEnable" I L 1750 2700 50 
+F6 "USB_D+" B R 3200 2850 50 
+F7 "USB_D-" B R 3200 2950 50 
+F8 "FUSB302_INT" I R 3200 2600 50 
+F9 "FUSB302_SCL" B R 3200 2500 50 
+F10 "FUSB302_SDA" B R 3200 2400 50 
+$EndSheet
+$Sheet
+S 6800 1650 1300 950 
+U 607D8CCB
+F0 "SX1278" 50
+F1 "sx1278.sch" 50
+$EndSheet
+$Sheet
+S 2050 4800 1050 850 
+U 607D914A
+F0 "Sensors" 50
+F1 "sensors.sch" 50
 $EndSheet
 $EndSCHEMATC

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TS3USB221DCDR
+D TS3USB221High-SpeedUSB 2.0 (480-Mbps)1:2 Multiplexer – Demultiplexer Switch With Single Enable
+K Multiplexer, Demultiplexer, Switch, USB
+F https://www.ti.com/lit/ds/symlink/ts3usb221.pdf
+$ENDCMP
+#
+#End Doc Library
