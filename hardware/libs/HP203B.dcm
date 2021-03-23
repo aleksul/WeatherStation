@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HP203B
+D PRECISION BAROMETER AND ALTIMETER SENSOR
+F http://www.hoperf.com/data/upload/portal/20190307/HP203B_DataSheet_EN_V2.0.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,5 +1,6 @@
 (sym_lib_table
-  (lib (name TSP62150)(type Legacy)(uri ${KIPRJMOD}/libs/TPS62150RGTR.lib)(options "")(descr ""))
   (lib (name Type-C)(type Legacy)(uri ${KIPRJMOD}/libs/105450-0101.lib)(options "")(descr ""))
   (lib (name ts3usb221dcdr)(type Legacy)(uri ${KIPRJMOD}/libs/ts3usb221dcdr.lib)(options "")(descr ""))
+  (lib (name TPS61256)(type Legacy)(uri ${KIPRJMOD}/libs/TPS61256.lib)(options "")(descr ""))
+  (lib (name HP203B)(type Legacy)(uri ${KIPRJMOD}/libs/HP203B.lib)(options "")(descr ""))
 )
