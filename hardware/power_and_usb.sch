@@ -533,7 +533,7 @@ Wire Wire Line
 Wire Wire Line
 	8100 3500 8850 3500
 Text HLabel 6250 4600 0    50   Input ~ 0
-ChargeEnable
+ChargeDisable
 Text Label 8500 4400 0    50   ~ 0
 ControlSelect
 $Comp
