@@ -382,13 +382,11 @@ MQ2
 Text Label 8250 3600 0    50   ~ 0
 MQ2
 Text Label 3350 3250 0    50   ~ 0
-ESP_CS
+ESP-LoRa_CS
 Text Label 3350 1650 0    50   ~ 0
-LoRa_CS
+ESP-LoRa_CS
 Text Label 7250 3800 2    50   ~ 0
-LoRa_CS
-Text Label 7250 3900 2    50   ~ 0
-ESP_CS
+ESP-LoRa_CS
 Text Label 7250 3600 2    50   ~ 0
 ESP_Disable-RF_Mod
 Text Label 2950 4500 0    50   ~ 0
@@ -432,7 +430,6 @@ Text Label 1500 7250 2    50   ~ 0
 Enable_MQ2
 Text Label 8250 4400 0    50   ~ 0
 Enable_MQ2
-NoConn ~ 1500 4600
 Text Label 2250 3250 2    50   ~ 0
 ESP_Disable-RF_Mod
 Text Label 3350 1950 0    50   ~ 0
@@ -736,4 +733,8 @@ Wire Wire Line
 	6350 3350 6350 3300
 Wire Wire Line
 	6350 3300 6650 3300
+Text Label 1500 4600 2    50   ~ 0
+Charge
+Text Label 7250 3900 2    50   ~ 0
+Charge
 $EndSCHEMATC
