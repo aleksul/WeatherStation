@@ -488,17 +488,6 @@ F 3 "~" H 7450 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:Jumper_2_Open JP1
-U 1 1 603825B2
-P 7450 3500
-F 0 "JP1" V 7404 3598 50  0000 L CNN
-F 1 "Jumper_PROG" V 7495 3598 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7450 3500 50  0001 C CNN
-F 3 "~" H 7450 3500 50  0001 C CNN
-	1    7450 3500
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+3.3V #PWR030
 U 1 1 60390ADA
 P 7450 2900
@@ -512,12 +501,12 @@ $EndComp
 $Comp
 L power:GND #PWR035
 U 1 1 60391528
-P 7450 3700
-F 0 "#PWR035" H 7450 3450 50  0001 C CNN
-F 1 "GND" H 7455 3527 50  0000 C CNN
-F 2 "" H 7450 3700 50  0001 C CNN
-F 3 "" H 7450 3700 50  0001 C CNN
-	1    7450 3700
+P 7450 3600
+F 0 "#PWR035" H 7450 3350 50  0001 C CNN
+F 1 "GND" H 7455 3427 50  0000 C CNN
+F 2 "" H 7450 3600 50  0001 C CNN
+F 3 "" H 7450 3600 50  0001 C CNN
+	1    7450 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -849,4 +838,15 @@ Wire Wire Line
 	8300 5650 9200 5650
 Wire Wire Line
 	8450 5850 8800 5850
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 608CC5E3
+P 7450 3450
+F 0 "JP1" V 7404 3518 50  0000 L CNN
+F 1 "Jumper_PROG" V 7495 3518 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 7450 3450 50  0001 C CNN
+F 3 "~" H 7450 3450 50  0001 C CNN
+	1    7450 3450
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
