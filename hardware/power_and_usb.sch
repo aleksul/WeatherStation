@@ -140,9 +140,9 @@ F 3 "http://www.ti.com/lit/ds/symlink/tpd4e02b04.pdf" H 1325 6825 50  0001 C CNN
 $EndComp
 Text Notes 1800 6700 2    50   ~ 0
 ESD protection
-Text Label 1000 5850 0    50   ~ 0
-D+
 Text Label 1100 5950 0    50   ~ 0
+D+
+Text Label 1000 5850 0    50   ~ 0
 D-
 Text Label 1300 6050 0    50   ~ 0
 CC1
@@ -516,6 +516,8 @@ $Comp
 L ts3usb221dcdr:TS3USB221DCDR D2
 U 1 1 60501F6D
 P 3900 6850
+AR Path="/60501F6D" Ref="D2"  Part="1" 
+AR Path="/603656E0/60501F6D" Ref="D2"  Part="1" 
 F 0 "D2" H 3700 7450 50  0000 C CNN
 F 1 "TS3USB221DCDR" H 4250 6300 50  0000 C CNN
 F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 3900 6300 50  0001 C CNN
@@ -705,12 +707,12 @@ Connection ~ 9050 5550
 $Comp
 L power:GNDA #PWR073
 U 1 1 605D7733
-P 5500 5250
-F 0 "#PWR073" H 5500 5000 50  0001 C CNN
-F 1 "GNDA" H 5505 5077 50  0000 C CNN
-F 2 "" H 5500 5250 50  0001 C CNN
-F 3 "" H 5500 5250 50  0001 C CNN
-	1    5500 5250
+P 5500 4900
+F 0 "#PWR073" H 5500 4650 50  0001 C CNN
+F 1 "GNDA" H 5505 4727 50  0000 C CNN
+F 2 "" H 5500 4900 50  0001 C CNN
+F 3 "" H 5500 4900 50  0001 C CNN
+	1    5500 4900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1006,17 +1008,6 @@ F 3 "" H 8100 1850 50  0001 C CNN
 	1    8100 1850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R27
-U 1 1 606CDF7A
-P 8450 1850
-F 0 "R27" V 8243 1850 50  0000 C CNN
-F 1 "0R" V 8334 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" V 8380 1850 50  0001 C CNN
-F 3 "~" H 8450 1850 50  0001 C CNN
-	1    8450 1850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8600 1850 8800 1850
 Wire Wire Line
@@ -1190,28 +1181,6 @@ Text Label 4700 6150 2    50   ~ 0
 D+
 Text Label 4700 6300 2    50   ~ 0
 D-
-$Comp
-L Device:R R43
-U 1 1 60734F94
-P 4900 6150
-F 0 "R43" V 4693 6150 50  0000 C CNN
-F 1 "0R" V 4784 6150 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" V 4830 6150 50  0001 C CNN
-F 3 "~" H 4900 6150 50  0001 C CNN
-	1    4900 6150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R44
-U 1 1 60737243
-P 5150 6300
-F 0 "R44" V 4943 6300 50  0000 C CNN
-F 1 "0R" V 5034 6300 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" V 5080 6300 50  0001 C CNN
-F 3 "~" H 5150 6300 50  0001 C CNN
-	1    5150 6300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5300 6300 5350 6300
 Wire Wire Line
@@ -1228,8 +1197,8 @@ Wire Notes Line
 	5750 6350 4500 6350
 Wire Notes Line
 	4500 6350 4500 5900
-Text Notes 4700 5800 0    50   ~ 0
-If without battery, place R \ninstead of TS3USB221
+Text Notes 4500 5850 0    50   ~ 0
+Without battery
 Text Notes 9350 5550 0    50   ~ 0
 Battery Thermistor
 $Comp
@@ -1312,50 +1281,6 @@ Wire Wire Line
 	6400 4600 6250 4600
 Wire Wire Line
 	7300 4500 5500 4500
-$Comp
-L Jumper:Jumper_2_Bridged JP2
-U 1 1 60885D87
-P 5500 5050
-F 0 "JP2" V 5454 5108 50  0000 L CNN
-F 1 "Jumper" V 5545 5108 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5500 5050 50  0001 C CNN
-F 3 "~" H 5500 5050 50  0001 C CNN
-	1    5500 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R38
-U 1 1 6088DE66
-P 5250 4750
-F 0 "R38" V 5043 4750 50  0000 C CNN
-F 1 "10K" V 5134 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5180 4750 50  0001 C CNN
-F 3 "~" H 5250 4750 50  0001 C CNN
-	1    5250 4750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5500 4500 5500 4750
-Wire Wire Line
-	5400 4750 5500 4750
-Connection ~ 5500 4750
-Wire Wire Line
-	5500 4750 5500 4850
-$Comp
-L power:+3.3V #PWR068
-U 1 1 608A3905
-P 5000 4700
-F 0 "#PWR068" H 5000 4550 50  0001 C CNN
-F 1 "+3.3V" H 5015 4873 50  0000 C CNN
-F 2 "" H 5000 4700 50  0001 C CNN
-F 3 "" H 5000 4700 50  0001 C CNN
-	1    5000 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 4700 5000 4750
-Wire Wire Line
-	5000 4750 5100 4750
 Wire Wire Line
 	5050 3800 5050 3750
 Wire Wire Line
@@ -1471,4 +1396,50 @@ Connection ~ 2700 900
 Wire Wire Line
 	2350 900  2350 850 
 Connection ~ 2350 900 
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 608D23C1
+P 4900 6150
+F 0 "JP3" H 4900 6355 50  0000 C CNN
+F 1 "Jumper" H 4900 6264 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4900 6150 50  0001 C CNN
+F 3 "~" H 4900 6150 50  0001 C CNN
+	1    4900 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 608D4957
+P 5150 6300
+F 0 "JP4" H 5150 6505 50  0000 C CNN
+F 1 "Jumper" H 5150 6414 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5150 6300 50  0001 C CNN
+F 3 "~" H 5150 6300 50  0001 C CNN
+	1    5150 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4500 5500 4600
+$Comp
+L Device:R R27
+U 1 1 608D9844
+P 5500 4750
+F 0 "R27" H 5430 4704 50  0000 R CNN
+F 1 "10K" H 5430 4795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5430 4750 50  0001 C CNN
+F 3 "~" H 5500 4750 50  0001 C CNN
+	1    5500 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 608DB3E1
+P 8450 1850
+F 0 "JP2" H 8450 2055 50  0000 C CNN
+F 1 "Jumper" H 8450 1964 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8450 1850 50  0001 C CNN
+F 3 "~" H 8450 1850 50  0001 C CNN
+	1    8450 1850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

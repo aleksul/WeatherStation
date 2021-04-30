@@ -599,28 +599,6 @@ Wire Wire Line
 	8650 5800 8500 5800
 Connection ~ 8650 5800
 Connection ~ 8500 5800
-$Comp
-L Device:R R49
-U 1 1 608731D9
-P 4950 4600
-F 0 "R49" V 4900 4400 50  0000 C CNN
-F 1 "0R" V 4950 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" V 4880 4600 50  0001 C CNN
-F 3 "~" H 4950 4600 50  0001 C CNN
-	1    4950 4600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R47
-U 1 1 6087422D
-P 5400 4400
-F 0 "R47" V 5350 4200 50  0000 C CNN
-F 1 "0R" V 5400 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" V 5330 4400 50  0001 C CNN
-F 3 "~" H 5400 4400 50  0001 C CNN
-	1    5400 4400
-	0    1    1    0   
-$EndComp
 Text HLabel 5550 4400 2    50   Input ~ 0
 RF_MOD
 Wire Wire Line
@@ -1192,4 +1170,26 @@ Text HLabel 4550 5200 2    50   BiDi ~ 0
 DIO4
 Text HLabel 4550 5300 2    50   BiDi ~ 0
 DIO5
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 608ED2EB
+P 5400 4400
+F 0 "JP5" H 5400 4605 50  0000 C CNN
+F 1 "Jumper" H 5400 4514 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5400 4400 50  0001 C CNN
+F 3 "~" H 5400 4400 50  0001 C CNN
+	1    5400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Bridged JP6
+U 1 1 608EF9C2
+P 4950 4600
+F 0 "JP6" H 4950 4805 50  0000 C CNN
+F 1 "Jumper" H 4950 4714 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 4950 4600 50  0001 C CNN
+F 3 "~" H 4950 4600 50  0001 C CNN
+	1    4950 4600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

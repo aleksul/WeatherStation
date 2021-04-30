@@ -506,17 +506,6 @@ Wire Wire Line
 Wire Wire Line
 	2400 7200 1500 7200
 $Comp
-L Jumper:Jumper_3_Bridged12 JP3
-U 1 1 605CBA25
-P 2550 7200
-F 0 "JP3" V 2504 7267 50  0000 L CNN
-F 1 "Jumper" V 2595 7267 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2550 7200 50  0001 C CNN
-F 3 "~" H 2550 7200 50  0001 C CNN
-	1    2550 7200
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+3.3V #PWR0127
 U 1 1 605C9535
 P 3050 6950
@@ -761,4 +750,19 @@ Wire Wire Line
 	7200 1600 8350 1600
 Wire Wire Line
 	8150 1900 8300 1900
+$Comp
+L Jumper:SolderJumper_3_Open JP7
+U 1 1 608E12BC
+P 2550 7200
+F 0 "JP7" V 2504 7268 50  0000 L CNN
+F 1 "Jumper" V 2595 7268 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels" H 2550 7200 50  0001 C CNN
+F 3 "~" H 2550 7200 50  0001 C CNN
+	1    2550 7200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 6950 2550 7000
+Wire Wire Line
+	2550 7450 2550 7400
 $EndSCHEMATC
