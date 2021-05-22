@@ -186,14 +186,10 @@ Text Label 1500 4400 2    50   ~ 0
 SCL
 Text Label 1500 4300 2    50   ~ 0
 SDA
-Text Label 8250 4100 0    50   ~ 0
-USB_DP
-Text Label 8250 4000 0    50   ~ 0
-USB_DM
 Text Label 2950 4750 0    50   ~ 0
-USB_DP
+USB_D+
 Text Label 2950 4850 0    50   ~ 0
-USB_DM
+USB_D-
 Text Label 8250 3100 0    50   ~ 0
 STM_TX1-DIO0
 Text Label 8250 3200 0    50   ~ 0
@@ -737,4 +733,8 @@ Text Label 1500 4600 2    50   ~ 0
 Charge
 Text Label 7250 3900 2    50   ~ 0
 Charge
+Text Label 8250 4100 0    50   ~ 0
+USB_D+
+Text Label 8250 4000 0    50   ~ 0
+USB_D-
 $EndSCHEMATC
